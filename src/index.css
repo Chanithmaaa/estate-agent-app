@@ -1,0 +1,67 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* CHANGED: Light Purple to Light Mint */
+  background-color: #f4fbf7; 
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* --- SCROLLBAR STYLING (The part you were looking for!) --- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4fbf7; /* Matches the new background */
+}
+
+::-webkit-scrollbar-thumb {
+  /* CHANGED: Old Purple to Charm Green */
+  background: #2E8B57; 
+  border-radius: 4px;
+  border: 2px solid #f4fbf7; /* Adds a nice gap */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* CHANGED: Dark Purple to Darker Green */
+  background: #236e47; 
+}
+
+/* --- FOOTER STYLING --- */
+.app-footer {
+  /* CHANGED: Old Purple to Charm Green */
+  background-color: #2E8B57; 
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.app-footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
