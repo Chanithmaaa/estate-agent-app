@@ -1,0 +1,252 @@
+/* =========================================
+   1. GLOBAL & CONTAINER
+   ========================================= */
+.home-container {
+  padding: 2rem 5% 0 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+/* =========================================
+   2. HERO SECTION
+   ========================================= */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 4rem; 
+
+  /* Full Screen Setup */
+  width: 100vw;      
+  min-height: 100vh; 
+  
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: -2rem; 
+  margin-bottom: 4rem;
+
+  background-color: #C1E1C1; 
+  border-radius: 0;          
+  padding: 0 5%; 
+  
+  color: #1b402a;            
+  box-sizing: border-box;
+}
+
+/* --- HERO CONTENT (Text Side) --- */
+.hero-content {
+  flex: 0 1 auto; 
+  max-width: 600px; 
+  text-align: left;
+  
+  /* MOVED TEXT BLOCK RIGHT (Kept from previous request) */
+  margin-left: 6rem; 
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1b402a; 
+  margin-bottom: 1.5rem;
+}
+
+/* --- CHANGED "DREAM HOME" COLOR HERE --- */
+.hero-content h1 span {
+  /* Changed from White (#ffffff) to Sea Green (#2E8B57) */
+  /* This matches the icons below and pops against the background */
+  color: #2E8B57; 
+  
+  /* Removed text-shadow or made it lighter since text is now dark */
+  text-shadow: none; 
+  
+  display: block; /* Keeps it on the next line */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #2c573f; 
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* --- BUTTONS --- */
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #2E8B57;
+  color: #f0f0f0; 
+  border: 2px solid #2E8B57;
+}
+
+.primary-btn:hover {
+  background: #1b402a; 
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.secondary-btn {
+  border: 2px solid #1b402a;
+  color: #1b402a;
+  background: transparent;
+}
+
+.secondary-btn:hover {
+  background: rgba(27, 64, 42, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* --- HERO IMAGE (Right Side) --- */
+.hero-image {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  
+  /* Keeps the image pushed to the right (Kept from previous request) */
+  margin-left: 8rem; 
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 650px; 
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   3. FEATURES SECTION
+   ========================================= */
+.features-section {
+  margin: 4rem auto;
+  padding: 0 5%;
+  max-width: 1400px;
+  clear: both;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee; 
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background-color: #C1E1C1; 
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: #2E8B57; 
+  transition: color 0.3s ease;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2E8B57; 
+  margin-bottom: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666; 
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon,
+.feature-card:hover h3 {
+  color: #1b402a; 
+}
+
+.feature-card:hover p {
+  color: #2c573f; 
+}
+
+/* =========================================
+   4. RESPONSIVE MEDIA QUERIES
+   ========================================= */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column; 
+    padding: 6rem 5% 3rem 5%;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    /* Reset margins on mobile */
+    margin-left: 0; 
+  }
+
+  .hero-image {
+    margin-left: 0; 
+  }
+  
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .primary-btn, .secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
