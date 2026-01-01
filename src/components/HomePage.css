@@ -43,8 +43,8 @@
   max-width: 600px; 
   text-align: left;
   
-  /* MOVED TEXT BLOCK RIGHT (Kept from previous request) */
-  margin-left: 6rem; 
+  /* CHANGED: Reduced from 6rem to 2rem to move text left */
+  margin-left: 2rem; 
 }
 
 .hero-content h1 {
