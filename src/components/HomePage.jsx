@@ -7,7 +7,8 @@ const HomePage = () => {
     <div className="home-container">
       <section className="hero-section">
         <div className="hero-content">
-        
+          
+
           <h1 style={{ fontSize: '3.5rem' }}>
             Find Your <span>Dream Home</span>
           </h1>
