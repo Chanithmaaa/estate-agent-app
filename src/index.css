@@ -9,7 +9,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  /* CHANGED: Light Purple to Light Mint */
   background-color: #f4fbf7; 
   color: #333;
   line-height: 1.6;
@@ -25,30 +24,27 @@ button {
   font-family: inherit;
 }
 
-/* --- SCROLLBAR STYLING (The part you were looking for!) --- */
+/* SCROLLBAR STYLING (The part you were looking for!) */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f4fbf7; /* Matches the new background */
+  background: #f4fbf7; 
 }
 
 ::-webkit-scrollbar-thumb {
-  /* CHANGED: Old Purple to Charm Green */
   background: #2E8B57; 
   border-radius: 4px;
-  border: 2px solid #f4fbf7; /* Adds a nice gap */
+  border: 2px solid #f4fbf7; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  /* CHANGED: Dark Purple to Darker Green */
   background: #236e47; 
 }
 
-/* --- FOOTER STYLING --- */
+/*  FOOTER STYLING */
 .app-footer {
-  /* CHANGED: Old Purple to Charm Green */
   background-color: #2E8B57; 
   color: white;
   text-align: center;

@@ -1,18 +1,12 @@
-/* =========================================
-   0. FONTS (ADD THIS AT THE VERY TOP)
-   ========================================= */
-/* Importing a clean, modern font (Poppins) for a premium feel */
+/* FONTS (ADD THIS AT THE VERY TOP) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* =========================================
-   1. CONTAINER & LAYOUT
-   ========================================= */
+/* CONTAINER & LAYOUT */
 .property-details-container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 3rem 2rem;
   min-height: 100vh;
-  /* CHANGED: Apply the new font to everything */
   font-family: 'Poppins', 'Segoe UI', sans-serif; 
   color: #333;
 }
@@ -32,9 +26,7 @@
   font-weight: 600;
 }
 
-/* =========================================
-   2. HEADER, META ROW & BACK BUTTON
-   ========================================= */
+/* 2. HEADER, META ROW & BACK BUTTON */
 .back-button {
   background-color: transparent;
   color: #1b402a;
@@ -43,13 +35,13 @@
   cursor: pointer;
   margin-bottom: 10px;
   font-size: 0.95rem;
-  font-weight: 600; /* Made slightly lighter */
+  font-weight: 600; 
   border: 2px solid #1b402a;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Poppins', sans-serif; /* Ensure button matches */
+  font-family: 'Poppins', sans-serif; 
 }
 
 .back-button:hover {
@@ -62,15 +54,13 @@
 .details-header h1 {
   text-align: center;
   font-size: 3rem;
-  font-weight: 700; /* Bold but clean */
+  font-weight: 700; 
   color: #1b402a; 
   margin: 10px 0;
-  /* CHANGED: Removed 'Playfair Display'. Now matches the rest. */
   font-family: 'Poppins', sans-serif; 
-  letter-spacing: -1px; /* Tighter, more modern spacing */
+  letter-spacing: -1px; 
 }
 
-/* --- META ROW (Location & Date) --- */
 .property-meta-row {
   display: flex;
   justify-content: center;
@@ -102,9 +92,6 @@
   color: #ddd;
 }
 
-/* =========================================
-   3. GALLERY GRID
-   ========================================= */
 .property-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -135,9 +122,6 @@
   filter: brightness(1.05);
 }
 
-/* =========================================
-   4. INFO GRID (Stats Only)
-   ========================================= */
 .property-info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -183,9 +167,6 @@
   letter-spacing: -0.5px;
 }
 
-/* =========================================
-   5. TABS & CONTENT
-   ========================================= */
 .tabs {
   display: flex;
   justify-content: center;
@@ -258,9 +239,7 @@
   background: #fcfcfc;
 }
 
-/* =========================================
-   6. MOBILE
-   ========================================= */
+/* MOBILE */
 @media (max-width: 768px) {
   .property-details-container { padding: 1rem; margin-top: 80px; }
   .property-details { padding: 1.5rem; }

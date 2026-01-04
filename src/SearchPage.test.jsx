@@ -12,14 +12,14 @@ const renderSearchPage = () => {
   );
 };
 
-// --- TEST 1: Check if the Main Title Renders ---
+// TEST 1: Check if the Main Title Renders 
 test('renders the main search page title', () => {
   renderSearchPage();
   const titleElement = screen.getByText(/Search Your Dream Home/i);
   expect(titleElement).toBeInTheDocument();
 });
 
-// --- TEST 2: Check if Filter Inputs are present ---
+//  TEST 2: Check if Filter Inputs are present 
 test('renders critical filter inputs (Price and Bedrooms)', () => {
   renderSearchPage();
   // Check for Min Price input

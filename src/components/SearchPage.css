@@ -1,8 +1,8 @@
-/* --- 1. FONTS IMPORT --- */
+/* 1. FONTS IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
 
-/* --- 2. GLOBAL RESET (FIXES THE FONT MISMATCH) --- */
+/*  2. GLOBAL RESET (FIXES THE FONT MISMATCH)  */
 /* This forces EVERYTHING to use Poppins */
 * {
   font-family: 'Poppins', sans-serif;
@@ -26,7 +26,7 @@
   margin: 0 auto;
 }
 
-/* --- 3. HEADER SECTION --- */
+/* 3. HEADER SECTION */
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@
   margin: 0 !important;
 }
 
-/* --- 4. BUTTONS --- */
+/*  4. BUTTONS  */
 .fav-toggle-btn {
   background-color: #C1E1C1 !important; 
   color: #1b402a !important; 
@@ -80,7 +80,7 @@
   100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
 }
 
-/* --- 5. SEARCH FORM --- */
+/*  5. SEARCH FORM  */
 .search-form-container {
   background-color: white;
   padding: 25px;
@@ -121,7 +121,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* --- 6. DATE PICKER CUSTOMIZATION --- */
+/*  6. DATE PICKER CUSTOMIZATION */
 .custom-datepicker-wrapper {
   width: 100%;
 }
@@ -172,7 +172,7 @@
   background-color: #C1E1C1 !important;
 }
 
-/* --- 7. PROPERTIES GRID --- */
+/*  7. PROPERTIES GRID  */
 .properties-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -246,7 +246,7 @@
   color: white !important;
 }
 
-/* --- 8. FAVORITES DRAWER --- */
+/* 8. FAVORITES DRAWER */
 .favorites-drawer {
   width: 320px;
   padding: 20px;

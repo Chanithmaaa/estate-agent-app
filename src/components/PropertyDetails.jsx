@@ -28,12 +28,11 @@ const PropertyDetails = () => {
     <div className="property-details-container">
       <div className="property-details">
         
-        {/* BACK BUTTON */}
         <button className="back-button" onClick={() => navigate("/search")}>
           &larr; Back to Results
         </button>
 
-        {/* --- TITLE SECTION --- */}
+        {/* TITLE SECTION */}
         <div className="details-header">
           <h1>{property.type}</h1>
           
@@ -49,7 +48,6 @@ const PropertyDetails = () => {
           </div>
         </div>
 
-        {/* GALLERY */}
         <div className="property-gallery">
           <img src={property.img1} alt="Main View" />
           <img src={property.img2} alt="Gallery 2" />
@@ -76,7 +74,6 @@ const PropertyDetails = () => {
           </p>
         </div>
 
-        {/* TABS */}
         <div className="tabs">
           <button
             className={activeTab === "description" ? "active" : ""}

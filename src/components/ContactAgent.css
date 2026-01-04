@@ -5,7 +5,6 @@
 }
 
 .contact-container h1 {
-  /* CHANGED: Purple to Charm Green */
   color: #284d38; 
   text-align: center;
   margin-bottom: 1rem;
@@ -92,7 +91,6 @@
 }
 
 .contact-form-section h2 {
-  /* CHANGED: Purple to Charm Green */
   color: #376b4d; 
   text-align: center;
   margin-bottom: 2rem;
@@ -123,12 +121,10 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  /* CHANGED: Focus Border to Charm Green */
   border-color: #376b4d; 
 }
 
 .submit-btn {
-  /* CHANGED: Background to Charm Green */
   background: #376b4d; 
   color: white;
   border: none;
@@ -143,7 +139,6 @@
 }
 
 .submit-btn:hover {
-  /* CHANGED: Darker Green on Hover */
   background: #236e47; 
   transform: translateY(-2px);
 }

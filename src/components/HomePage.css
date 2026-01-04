@@ -1,6 +1,4 @@
-/* =========================================
-   1. GLOBAL & CONTAINER
-   ========================================= */
+/* GLOBAL & CONTAINER */
 .home-container {
   padding: 2rem 5% 0 5%;
   max-width: 1400px;
@@ -8,9 +6,7 @@
   font-family: sans-serif;
 }
 
-/* =========================================
-   2. HERO SECTION
-   ========================================= */
+/* HERO SECTION */
 .hero-section {
   display: flex;
   align-items: center;
@@ -37,13 +33,11 @@
   box-sizing: border-box;
 }
 
-/* --- HERO CONTENT (Text Side) --- */
+/* HERO CONTENT (Text Side) */
 .hero-content {
   flex: 0 1 auto; 
   max-width: 600px; 
   text-align: left;
-  
-  /* CHANGED: Reduced from 6rem to 2rem to move text left */
   margin-left: 2rem; 
 }
 
@@ -55,16 +49,10 @@
   margin-bottom: 1.5rem;
 }
 
-/* --- CHANGED "DREAM HOME" COLOR HERE --- */
 .hero-content h1 span {
-  /* Changed from White (#ffffff) to Sea Green (#2E8B57) */
-  /* This matches the icons below and pops against the background */
   color: #2E8B57; 
-  
-  /* Removed text-shadow or made it lighter since text is now dark */
   text-shadow: none; 
-  
-  display: block; /* Keeps it on the next line */
+  display: block; 
 }
 
 .hero-content p {
@@ -121,8 +109,6 @@
   flex: 0 1 auto;
   display: flex;
   justify-content: center;
-  
-  /* Keeps the image pushed to the right (Kept from previous request) */
   margin-left: 8rem; 
 }
 
@@ -134,9 +120,7 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* =========================================
-   3. FEATURES SECTION
-   ========================================= */
+/* FEATURES SECTION */
 .features-section {
   margin: 4rem auto;
   padding: 0 5%;
@@ -199,9 +183,7 @@
   color: #2c573f; 
 }
 
-/* =========================================
-   4. RESPONSIVE MEDIA QUERIES
-   ========================================= */
+/*  RESPONSIVE MEDIA QUERIES */
 @media (max-width: 1024px) {
   .hero-section {
     flex-direction: column; 
@@ -213,7 +195,6 @@
   .hero-content {
     max-width: 100%;
     text-align: center;
-    /* Reset margins on mobile */
     margin-left: 0; 
   }
 

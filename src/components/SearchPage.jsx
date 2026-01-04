@@ -70,8 +70,7 @@ const SearchPage = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     
-    // --- 3. CONVERT DATE OBJECTS TO STRINGS FOR FILTERING ---
-    // If a year is selected in picker, get full year (e.g., "2022"). Else empty string.
+    // 3. CONVERT DATE OBJECTS TO STRINGS FOR FILTERING 
     const filterYearString = filters.addedYear ? filters.addedYear.getFullYear().toString() : "";
     
     // If a month is selected, get full month name (e.g., "January"). Else empty string.
@@ -84,10 +83,9 @@ const SearchPage = () => {
       const matchesMinBedrooms = !filters.minBedrooms || property.bedrooms >= parseInt(filters.minBedrooms, 10);
       const matchesMaxBedrooms = !filters.maxBedrooms || property.bedrooms <= parseInt(filters.maxBedrooms, 10);
       
-      // --- 4. UPDATED FILTER LOGIC FOR DATES ---
-      // Check if property month includes the selected month string
+      // 4. UPDATED FILTER LOGIC FOR DATES 
       const matchesAddedMonth = !filterMonthString || (property.added && property.added.month.toLowerCase().includes(filterMonthString.toLowerCase()));
-      // Check if property year matches the selected year string
+      
       const matchesAddedYear = !filterYearString || (property.added && property.added.year.toString() === filterYearString);
       
       const matchesPostcode = !filters.postcode || property.location.toLowerCase().includes(filters.postcode.toLowerCase());
@@ -186,7 +184,7 @@ const SearchPage = () => {
           <TextField label="Min Bedrooms" name="minBedrooms" type="number" value={filters.minBedrooms} onChange={handleInputChange} size="small" className="search-input" />
           <TextField label="Max Bedrooms" name="maxBedrooms" type="number" value={filters.maxBedrooms} onChange={handleInputChange} size="small" className="search-input" />
           
-          {/* --- 5. REPLACED MONTH TEXTFIELD WITH DATEPICKER --- */}
+          {/*  5. REPLACED MONTH TEXTFIELD WITH DATEPICKER  */}
           <div className="custom-datepicker-wrapper">
              <DatePicker
                 selected={filters.addedMonth}
@@ -198,7 +196,7 @@ const SearchPage = () => {
              />
           </div>
 
-          {/* --- 6. REPLACED YEAR TEXTFIELD WITH DATEPICKER --- */}
+          {/* 6. REPLACED YEAR TEXTFIELD WITH DATEPICKER  */}
           <div className="custom-datepicker-wrapper">
              <DatePicker
                 selected={filters.addedYear}
@@ -284,7 +282,7 @@ const SearchPage = () => {
         </div>
       )}
 
-      {/* --- FAVORITES SIDEBAR (DRAWER) --- */}
+      {/*  FAVORITES SIDEBAR (DRAWER)  */}
       <Drawer
         anchor="right"
         open={isDrawerOpen}
